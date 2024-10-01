@@ -1,37 +1,26 @@
-🟣 SeedMine Bot
+# Commands
 
-Auto Claim for SeedMine Telegram Bot🔴
+Below are the commands that you can easily copy by tapping the button.
 
-⭐Features
+### Command 1
+```bash
+<pre><code id="pkg install python">npm install package-name</code></pre>
+<button onclick="copyToClipboard('pkg install python')">Tap to Copy</button>
 
-- [x] Auto Claim Seed
-- [x] Auto Complete Task
-- [x] Auto Daily Bonus Claim
-- [x] Auto Spin
-- [x] Multi Account Support
+### Command 2
+```bash
+<pre><code id="command2">git clone https://github.com/APKSHADOWESP/SEEDS</code></pre>
+<button onclick="copyToClipboard('command2')">Tap to Copy</button>
 
-# How to Use
-
-Termux setup
-
-1... First command to update
-     pkg update && pkg upgrade
-
-2... Type y for give permission  5      times 
-    y
-
-3.... Install python in termux
-       pkg install python
-
-4.... Install  git for clone repository
-      pkg install git
-
-5.....  git clone https://github.com/APKSHADOWESP/SEEDS
-
-
-6.... Access your code with cd    command
-        
-     cd  
-
-7.... Install pip requirements 
-pip install -r requirements.txt
+<script>
+function copyToClipboard(commandId) {
+    var copyText = document.getElementById(commandId);
+    var textArea = document.createElement("textarea");
+    textArea.value = copyText.textContent || copyText.innerText;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+    alert("Command copied: " + textArea.value);
+}
+</script>
