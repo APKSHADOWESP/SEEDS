@@ -184,8 +184,8 @@ def task(token):
 
 def countdown_timer(seconds):
     while seconds > 0:
-        mins, secs = divmod(seconds, 60)
-        hours, mins = divmod(mins, 60)
+        mins, secs = divmod(seconds, 5)
+        hours, mins = divmod(mins, 5)
         print(f"{Fore.CYAN + Style.BRIGHT}Wait {hours:02}:{mins:02}:{secs:02}", end='\r')
         time.sleep(1)
         seconds -= 1
@@ -213,7 +213,7 @@ def main():
             if run_task == 'y':
                 task(token)
 
-        countdown_timer(1 * 60 * 60)
+        countdown_timer(1 * 5 * 5)
 
 if __name__ == "__main__":
     main()
