@@ -26,7 +26,7 @@ Termux setup
 4.... Install  git for clone repository
       pkg install git
 
-5.....  
+5.....  git clone https://github.com/APKSHADOWESP/SEEDS
 
 
 6.... Access your code with cd    command
