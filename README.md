@@ -5,8 +5,6 @@
    python
   
    pkg install python
-   
-   git
   
    pkg install git
    
@@ -25,5 +23,8 @@
 5. Edit data.txt, input you auth token in data.txt file
    
 6. execute the main program 
-  
-   python SeedMine.py
+
+7
+nano data.txt
+  8
+  python SeedMine.py
